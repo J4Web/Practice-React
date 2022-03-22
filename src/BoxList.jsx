@@ -6,34 +6,24 @@ export default class BoxList extends Component {
         super(props);
         this.state=
         {
-            a:Array.from({length:0}),
-            width: "",
-            height: "",
-            color: ""
+            boxes: [{width:"", height:"",color:""}]
         }
-        this.addItem=this.addItem.bind(this)
+        this.addItem=this.addItem.bind(this);
 
     }
     addItem(s)
     {
-        this.setState({
-            a:Array.from({length:this.state.a.length+1}),
-            width: s.width,
-            height: s.height,
-            color: s.color
-        })
-        this.setState({
-            width: "",
-            height: "",
-            color: "",
-        })
+        this.setState(oldState=>({
+            boxes: [...oldState.boxes,s]
+        }))
     }
 render() {
     return (
     <div><h1>BoxList</h1>
-    {this.state.a.map(k=>{
-        return <Box1 width={this.state.width} height={this.state.height} color={this.state.color}/>})}
-    <NewBoxForm addItem={this.addItem}/></div>
+    <NewBoxForm addItem={this.addItem}/>
+    {this.state.boxes.map(k=>{
+        return <Box1 width={k.width} height={k.height} color={k.color}/>})}
+    </div>
     )
 }
 }

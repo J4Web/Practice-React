@@ -23,11 +23,6 @@ class NewBoxForm extends Component {
             [evt.target.name]:evt.target.value,
             [evt.target.name]:evt.target.value,
         })
-        // this.setState({
-        //     width: "",
-        //     height: "",
-        //     color: ""
-        // })
     }
     render() {
         return (

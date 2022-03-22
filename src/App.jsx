@@ -9,10 +9,13 @@ import React,{Component} from 'react';
 // import Lotto from './Lotto';
 // import Counter from './Counter';
 // import DiceRolling from './DiceRolling';
-// import NumberList
+// import NumberList from './NumerList';
+// import NumberList from './NumberList'
+// import Hangman from './Hangman';
+// import ShoppingList  from './ShoppingList';
 import './App.css'
 // import Box1 from './Box1';
-import NewBoxForm from './NewBoxForm';
+// import NewBoxForm from './NewBoxForm';
 import BoxList from './BoxList';
 class App extends Component {
     render() {
