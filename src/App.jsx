@@ -16,7 +16,8 @@ import React,{Component} from 'react';
 import './App.css'
 // import Box1 from './Box1';
 // import NewBoxForm from './NewBoxForm';
-import BoxList from './BoxList';
+// import BoxList from './BoxList';
+import ComponentDidMount from './ComponentDidMount'
 class App extends Component {
     render() {
         return <div className="app">
@@ -31,8 +32,9 @@ class App extends Component {
             {/* <NumberList/> */}
             {/* <Hangman/> */}
             {/* <ShoppingList/> */}
-            <BoxList/>
+            {/* <BoxList/> */}
             {/* <NewBoxForm/> */}
+            <ComponentDidMount/>
 
             </div>
     }
