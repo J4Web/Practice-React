@@ -14,6 +14,8 @@ export default class ComponentDidMount extends Component {
     axios.get('https://api.github.com/zen').then(res=> this.setState({quote:res.data}))
     }
     //Getting the quotes using axios and setting the state inside the component did mount
+
+  
 render() {
     console.warn("this is render");
     return (

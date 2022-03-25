@@ -17,6 +17,14 @@ class Counter extends Component {
     {
         this.setState({num: 10});
     }
+    componentDidUpdate(pP,pS)
+    {
+
+        if(pS.num===7)
+        {
+            alert("Hey you won prevously");
+        }
+    }
     render() {
         return <div>
         <h1> Your Current Number is : {this.state.num}</h1>

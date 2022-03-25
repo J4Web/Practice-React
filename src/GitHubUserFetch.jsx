@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 class GitHubUserFetch extends Component {
     constructor(props) {
+        console.log('constructor is called');
         super(props);
         this.state = {
             img:"",
@@ -10,6 +11,7 @@ class GitHubUserFetch extends Component {
     }
     async componentDidMount()
     {
+        console.log('ComponentDidMount is called');
         const user=`https://api.github.com/users/${this.props.user}`;
         let resp=await axios.get(user);
         let data =resp.data;
@@ -19,7 +21,12 @@ class GitHubUserFetch extends Component {
             name: data.name
         })
     }
+    componentDidUpdate(pP,pS,sS) {
+        console.log('componentdidUpdate is called');
+
+    }
     render() {
+                console.log('render is called');
         return (
             <div>
             {/* <h1>Hellooo</h1> */}
