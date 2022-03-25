@@ -18,7 +18,8 @@ import './App.css'
 // import NewBoxForm from './NewBoxForm';
 // import BoxList from './BoxList';
 // import ComponentDidMount from './ComponentDidMount'
-import LoaderData  from './LoaderData';
+// import LoaderData  from './LoaderData';
+import GitHubUserFetch from './GitHubUserFetch'
 class App extends Component {
     render() {
         return <div className="app">
@@ -36,7 +37,8 @@ class App extends Component {
             {/* <BoxList/> */}
             {/* <NewBoxForm/> */}
             {/* <ComponentDidMount/> */}
-            <LoaderData/>
+            {/* <LoaderData/> */}
+            <GitHubUserFetch user="colt" />
 
             </div>
     }
