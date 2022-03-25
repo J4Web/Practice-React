@@ -17,7 +17,8 @@ import './App.css'
 // import Box1 from './Box1';
 // import NewBoxForm from './NewBoxForm';
 // import BoxList from './BoxList';
-import ComponentDidMount from './ComponentDidMount'
+// import ComponentDidMount from './ComponentDidMount'
+import LoaderData  from './LoaderData';
 class App extends Component {
     render() {
         return <div className="app">
@@ -34,7 +35,8 @@ class App extends Component {
             {/* <ShoppingList/> */}
             {/* <BoxList/> */}
             {/* <NewBoxForm/> */}
-            <ComponentDidMount/>
+            {/* <ComponentDidMount/> */}
+            <LoaderData/>
 
             </div>
     }
