@@ -20,7 +20,8 @@ import './App.css'
 // import ComponentDidMount from './ComponentDidMount'
 // import LoaderData  from './LoaderData';
 // import GitHubUserFetch from './GitHubUserFetch'
-import Counter from './Counter';
+// import Counter from './Counter';
+import Deck from './Deck';
 class App extends Component {
     render() {
         return <div className="app">
@@ -40,7 +41,8 @@ class App extends Component {
             {/* <ComponentDidMount/> */}
             {/* <LoaderData/> */}
             {/* <GitHubUserFetch user="colt" /> */}
-            <Counter/>
+            {/* <Counter/> */}
+            <Deck/>
 
             </div>
     }
