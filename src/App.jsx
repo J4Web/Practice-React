@@ -21,7 +21,8 @@ import './App.css'
 // import LoaderData  from './LoaderData';
 // import GitHubUserFetch from './GitHubUserFetch'
 // import Counter from './Counter';
-import Deck from './Deck';
+// import Deck from './Deck';
+import FakingRouting from './FakingRouting'
 class App extends Component {
     render() {
         return <div className="app">
@@ -42,7 +43,9 @@ class App extends Component {
             {/* <LoaderData/> */}
             {/* <GitHubUserFetch user="colt" /> */}
             {/* <Counter/> */}
-            <Deck/>
+            {/* <Deck/> */}
+            {/* <Hangman/> */}
+            <FakingRouting/>
 
             </div>
     }
