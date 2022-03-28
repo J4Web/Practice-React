@@ -22,10 +22,16 @@ import './App.css'
 // import GitHubUserFetch from './GitHubUserFetch'
 // import Counter from './Counter';
 // import Deck from './Deck';
-import FakingRouting from './FakingRouting'
+// import FakingRouting from './FakingRouting'
+// import Routing from './Routing';
+import { Route,Routes,Link} from 'react-router-dom';
+import About from './About';
+import Home from './Home';
+import Contact from './Contact';
 class App extends Component {
     render() {
-        return <div className="app">
+        return  (
+        <div className="app">
             {/* <Pokedex/> */}
             {/* <Pokegame/> */}
             {/* <Counter/> */}
@@ -45,9 +51,18 @@ class App extends Component {
             {/* <Counter/> */}
             {/* <Deck/> */}
             {/* <Hangman/> */}
-            <FakingRouting/>
+            {/* <FakingRouting/> */}
 
-            </div>
-    }
+            <Link to="/">Home</Link>
+            <Link to="/about">about</Link>
+            <Link to="/"contact>Contact</Link>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/contact" element={<Contact/>} />
+                <Route  path="/about" element={<About/>} />
+            </Routes>
+            </div>)
+            
+}
 }
 export default App;
