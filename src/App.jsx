@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+
 // import Pokedex from './Pokedex';
 // import Pokegame from './Pokegame';
 // import Dice from './Dice';
@@ -24,7 +25,7 @@ import './App.css'
 // import Deck from './Deck';
 // import FakingRouting from './FakingRouting'
 // import Routing from './Routing';
-import { Route,Routes,Link} from 'react-router-dom';
+import { Route,Routes,NavLink} from 'react-router-dom';
 import About from './About';
 import Home from './Home';
 import Contact from './Contact';
@@ -53,9 +54,12 @@ class App extends Component {
             {/* <Hangman/> */}
             {/* <FakingRouting/> */}
 
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link>
             <Link to="/about">about</Link>
-            <Link to="/"contact>Contact</Link>
+            <Link to="/"contact>Contact</Link> */}
+            <NavLink exact="/"   className={({isActive}) => (isActive ? "active-link" : 'none')}  to="/">Home</NavLink>
+            <NavLink exact="/about"      className={({isActive}) => (isActive ? "active-link" : 'none')}to="/about">about</NavLink>
+            <NavLink exact="/contact"      className={({isActive}) => (isActive ? "active-link" : 'none')} to="/contact">Contact</NavLink>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/contact" element={<Contact/>} />
